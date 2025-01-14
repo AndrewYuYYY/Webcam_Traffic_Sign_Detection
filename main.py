@@ -22,7 +22,7 @@ def main():
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, frame_width)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, frame_height)
 
-    model = YOLO(r'/Users/andrewyuyy/Documents/GitHub/Webcam_Detection/runs/detect/train3/weights/best.pt')
+    model = YOLO(r'/Users/andrewyuyy/Documents/GitHub/Webcam_Detection/runs/detect/train4/weights/best.pt')
 
     box_annotator = sv.BoxAnnotator(
         thickness=2,

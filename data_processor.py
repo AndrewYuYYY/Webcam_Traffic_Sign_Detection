@@ -2,7 +2,7 @@ import os
 import random
 import shutil
 
-# Paths to your dataset
+# Paths to dataset
 images_path = "dataset/images"
 labels_path = "dataset/labels"
 train_images_path = "dataset_split/train/images"
@@ -11,12 +11,12 @@ val_images_path = "dataset_split/val/images"
 val_labels_path = "dataset_split/val/labels"
 
 # Create directories for train and validation splits
-os.makedirs(train_images_path, exist_ok=True)
+os.makedirs(train_images_path, exist_ok=True) # Use exist_ok=True to make sure no error raised when process again
 os.makedirs(train_labels_path, exist_ok=True)
 os.makedirs(val_images_path, exist_ok=True)
 os.makedirs(val_labels_path, exist_ok=True)
 
-# List all image files
+# List all image files (end with jpg or png)
 image_files = [f for f in os.listdir(images_path) if f.endswith(('.jpg', '.png'))]
 
 # Ensure randomization of the dataset

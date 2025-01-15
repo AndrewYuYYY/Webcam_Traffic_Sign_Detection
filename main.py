@@ -47,7 +47,7 @@ def main():
             labels=labels
         )
 
-        cv2.imshow('yolov8', frame)
+        cv2.imshow('Traffic_sign_detection', frame)
 
         if (cv2.waitKey(30) == 27):
             cap.release()

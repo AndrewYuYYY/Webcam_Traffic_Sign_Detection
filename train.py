@@ -8,7 +8,7 @@ def parse_args():
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(description="Train YOLO model on custom dataset")
     parser.add_argument('--model', type=str, default='yolov8l.pt',
-                        help="Pretrained YOLO model (e.g., yolov8n.pt, yolov8s.pt)")
+                        help="Pretrained YOLO model (e.g., yolov8n.pt, yolov8s.pt, yolov8l.pt)")
     parser.add_argument('--epochs', type=int, default=100, help="Number of training epochs")
     parser.add_argument('--batch-size', type=int, default=16, help="Batch size for training")
     parser.add_argument('--imgsz', type=int, default=640, help="Image size for training and validation")
